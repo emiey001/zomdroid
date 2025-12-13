@@ -69,6 +69,7 @@ public class GameLauncher {
         jvmArgs.add("-Dzomdroid.renderer=" + LauncherPreferences.requireSingleton().getRenderer().name());
         //jvmArgs.add("-XX:+PrintFlagsFinal"); // for debugging
         jvmArgs.add("-XX:ErrorFile=/dev/stdout"); // print jvm crash report to stdout for now
+        jvmArgs.add("-Ddebug=true");
 
         ArrayList<String> args = gameInstance.getArgsAsList();
 /*        args.add("-debug");
